@@ -1,0 +1,17 @@
+n1 = int(input())
+n2 = int(input())
+l=1
+i=2
+while(True):
+    if n1%i==0 and n2%i==0:
+        n1=n1//i
+        n2=n2//i
+        l*=i
+    elif n1<=i or n2<=i:
+        l=l*n1*n2
+        break
+    else:
+        i+=1
+        continue
+    
+print(l)   
